@@ -1,0 +1,32 @@
+<h1>Edition de l'article</h1>
+
+<div class="titre">
+  <%= render 'titre' %>
+</div>
+
+<hr class="titreHr">
+
+<% @article.contenus.each do |content| %>
+<div class="contenu">
+  <% if content.type == 'Texte' %>
+    <%= content.texte %>
+  <% else content.type == 'Image' %>
+    <%= image_tag content.texte, class: "photo" %>
+  <% end %>
+  <%= button_to 'Supprimer ce contenu', [content.article, content],
+            method: :delete,
+            data: { confirm: "Voulez-vous vraiment supprimer \nce contenu ?" } %>
+  <script>
+  $('img').bind('contextmenu', function(e) {
+    return false;
+    });
+  </script>
+</div>
+
+<% end %>
+
+<%= render 'contenus/form' %>
+ 
+<%= button_to "Supprimer l'article", article_path,
+          method: :delete,
+          data: { confirm: "Voulez-vous vraiment supprimer l'article ?" } %>

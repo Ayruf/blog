@@ -1,0 +1,23 @@
+<%= form_for([@article, @article.comments.build]) do |f| %>
+  <div class="commLabel">
+    <%= f.label :nom %>
+  </div>
+  <div>
+    <%= f.text_field :commentateur %>
+  </div>
+  
+  <div class="commLabel" style="margin-top:10px">
+    <%= f.label :commentaire %>
+  </div>
+  <div>
+    <%= f.text_area(:commentaire, rows: 7, cols:70) %>
+  </div>
+
+  <div class="bouton">
+    <%= f.submit 'Poster' %>
+  </div>
+  <div class="bouton"> 
+    <%= f.submit 'Annuler' %>
+  </div>
+  
+<% end %>

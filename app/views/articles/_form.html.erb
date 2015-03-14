@@ -1,0 +1,28 @@
+<%= form_for @article do |f| %>
+
+  <% if @article.errors.any? %>
+    <div id='error_explanation'>
+	  <h2>L'article n'a pas été créé !
+	    <%= pluralize(@article.errors.count, 'erreur') %>
+	  </h2>
+	  <ul>
+	    <% @article.errors.full_messages.each do |msg| %>
+	      <li><%= msg %></li>
+	     <% end %>
+	   </ul>
+	</div>
+  <% end %>
+
+  <p>
+	  <%= f.label :titre %><br>
+	  <%= f.text_field :titre %>
+  </p>
+
+  <p>
+	  <%= f.submit 'Continuer' %>
+	  <%= f.submit 'Annuler la création' %>
+  </p>
+ 
+<% end %>
+
+

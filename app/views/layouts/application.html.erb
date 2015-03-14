@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLT</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag "favicon.jpg" %>
+</head>
+<body>	
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+				fjs.parentNode.insertBefore(js, fjs);
+				}
+			(document, 'script', 'facebook-jssdk')
+		);
+	</script>
+	
+	<div id="bannière">
+		<div>
+			<%= image_tag("banniere.jpg", usemap: "#bannieremap") %>
+			<map name="bannieremap">
+				<area shape="rect" coords="675,0,775,180" href=<%= articles_path %>>
+			</map>
+		</div>	
+	</div>
+
+	<hr style="width:60%; color:lightgray">
+
+	<div id="coeur">
+		<%= yield %>
+	</div>
+	<div id="colonneD">Ici, on peut mettre des trucs. Pleins de choses pour remplir, genre
+						aimer le blog, sur facebook, twitter, etc...</div>
+	
+</body>
+</html>

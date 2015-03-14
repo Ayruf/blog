@@ -1,0 +1,31 @@
+<%= form_for([@article, @article.contenus.build]) do |f| %>
+
+  <% if @article.errors.any? %>
+    <div id='error_explanation'>
+	  <h2>L'article n'a pas été créé !
+	    <%= pluralize(@article.errors.count, 'erreur') %>
+	  </h2>
+	  <ul>
+	    <% @article.errors.full_messages.each do |msg| %>
+	      <li><%= msg %></li>
+	     <% end %>
+	   </ul>
+	</div>
+  <% end %>
+  <hr class="titreHr">
+  <div style="display:block">
+    <%= select_tag(:type, options_for_select(["Image", "Texte"])) %>
+  </div>
+  <div style="display:inline-block">
+	<%= f.text_area(:texte, rows: 7, cols:70) %>
+  </div>
+  
+  <p>
+	  <%= f.submit 'Ajouter et continuer' %>
+	  <%= f.submit 'Ajouter et terminer' %>
+	  <%= f.submit "Terminer" %>
+  </p>
+ 
+<% end %>
+
+

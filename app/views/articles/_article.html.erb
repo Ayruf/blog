@@ -1,0 +1,15 @@
+<% @article.contenus.each do |content| %>
+<div class="contenu">
+  <% if content.type == 'Texte' %>
+    <%= content.texte %>
+  <% else content.type == 'Image' %>
+    <%= image_tag content.texte, class: "photo" %>  
+  <% end %>
+  <script>
+	$('img').bind('contextmenu', function(e) {
+	  return false;
+	  });
+  </script>  
+</div>
+<% end %>
+
