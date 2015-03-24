@@ -45165,3 +45165,2337 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 85ms (Views: 77.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:11:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (25.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (15.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (27.3ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:47 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.1ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (27.0ms)
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.4ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.4ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.6ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.4ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:26:53 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (38.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.4ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.9ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (16.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (38.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.4ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (16.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (23.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (25.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:38 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:39 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (31.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:53 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:54 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (29.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:27:55 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (23.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (43.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:28:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+
+Started GET "/images/bannire.jpg" for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/bannire.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (32.4ms)
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:28:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (25.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.4ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:28:21 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (16.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (33.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.3ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.5ms)
+
+
+Started GET "/assets/banniere-ed1403b4db8b8d7a46359ca8e0ee728a.jpg" for 127.0.0.1 at 2015-03-24 19:28:47 +0100
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:29:36 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.5ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (26.3ms)
+
+
+Started GET "/assets/banniere-ed1403b4db8b8d7a46359ca8e0ee728a.jpg" for 127.0.0.1 at 2015-03-24 19:29:37 +0100
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mContenu Load (0.2ms)[0m  SELECT "contenus".* FROM "contenus" WHERE "contenus"."article_id" = $1  [["article_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/main-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/application-7dbef2d7cd57609741355a804c244d2c.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/contenus-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/contenus-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/assets/main-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+
+Started GET "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..." for 127.0.0.1 at 2015-03-24 19:29:46 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc...Ici,%20on%20peut%20mettre%20des%20trucs.%20Pleins%20de%20choses%20pour%20remplir,%20genre%20aimer%20le%20blog,%20sur%20facebook,%20twitter,%20etc..."):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/furya/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.6ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.1ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/furya/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (24.7ms)
