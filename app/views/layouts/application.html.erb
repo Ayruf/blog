@@ -8,19 +8,6 @@
   <%= favicon_link_tag "favicon.jpg" %>
 </head>
 <body>	
-	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
-				fjs.parentNode.insertBefore(js, fjs);
-				}
-			(document, 'script', 'facebook-jssdk')
-		);
-	</script>
-	
 	<div id="bannière">
 		<div>
 			<%= image_tag("banniere.jpg", usemap: "#bannieremap") %>
@@ -35,8 +22,12 @@
 	<div id="coeur">
 		<%= yield %>
 	</div>
-	<div id="colonneD">Ici, on peut mettre des trucs. Pleins de choses pour remplir, genre
-						aimer le blog, sur facebook, twitter, etc...</div>
+	<div id="colonneD">
+		<%= link_to image_tag("fbaqua.jpg", class: "social_logo"), "https://www.facebook.com/CathyLeThanhPhotography?fref=ts", :target => "_blank" %> 
+		<%= image_tag("twaqua.jpg", class: "social_logo") %> 
+		<%= link_to image_tag("pinaqua.jpg", class: "social_logo"), "https://fr.pinterest.com/lelendyl/", :target => "_blank" %> 
+		<%= image_tag("Instaaqua.jpg", class: "social_logo") %> 
+	</div>
 	
 </body>
 </html>

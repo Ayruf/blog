@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 body {
 	background:white;
@@ -34,7 +35,7 @@ body {
 
 #colonneD {
 	display:inline-block; 
-#	border-left:thin solid black;
+	border-left:thin solid black;
 	width:10%;
 	padding-left:0.5%;
 	vertical-align:top;
@@ -83,7 +84,7 @@ body {
 	font-family:Courier New; 
 	font-weight:bold;
 	text-align:left; 
-	margin-left:20%;
+	margin-left:0%;
 	margin-top:2%;
 }
 
@@ -91,8 +92,8 @@ body {
 	display:block;
 	margin-top:0.5%;
 	margin-bottom:2%;
-	width:75%;	
-	margin-left:20%;
+	width:95%;	
+	margin-left:0%;
 	color: lightgray; 
 }
 
@@ -127,5 +128,5 @@ body {
 }
 
 .social_logo {
-	width:35%;
+	height:10%;
 }
