@@ -6,36 +6,38 @@
 
 <div class="container">
   <div class="colonneLike">
-    <%= image_tag("fleur2.jpg", class: "fleur") %>
+	  <div style="position:relative">
+	    <div style="position:absolute; margin-left:13%; margin-top:13%"><%= @article.created_at.strftime("%d") %></div>
+	    <div style="position:absolute; margin-left:42%; margin-top:13%"><%= @article.created_at.strftime("%m") %></div>
+	    <div style="position:absolute; margin-left:74%; margin-top:13%"><%= @article.created_at.strftime("%y") %></div>	  
+	    <div><%= image_tag("date.jpg", class: "fleur") %></div>
+	  </div>
   </div>
 
 	<%= render 'article' %>
 </div>
 
-<div style="text-align:left ; padding-left:0% ; margin-top:2%">
-	<div class="fb-like" 
-	data-href="@article_path" 
-	data-layout="standard" 
-	data-action="like" 
-	data-show-faces="true" 
-	data-share="true">
-	</div>
+<hr class="titreHr">
+
+<div>
+	<% @article.comments.reverse_each do |commentaire| %>
+	  <div class="commPseudo">
+		<i>Le <%= commentaire.created_at.strftime("%d-%m-%Y") %> à <%= commentaire.created_at.strftime("%H:%M") %>, </i>
+		<strong style="color:black"><%= commentaire.commentateur %></strong> a posté
+	  </div>
+
+	  <div class="comm">
+		" <%= commentaire.commentaire %> "
+	  </div>
+	  
+	  <p class="commWebsite">
+		<% if commentaire.website %>
+		  <%= link_to commentaire.website, "http://#{commentaire.website}", target: "_blank"%>
+		<% end %>
+	  </p>
+	<% end %>
+
+	<h2 class="titreComm">Commenter l'article</h2>
+	<%= render 'comments/form' %>
 </div>
 
-<hr class="titreHr">
-
-<% @article.comments.reverse_each do |commentaire| %>
-  <div class="commPseudo">
-    <i>Le <%= commentaire.created_at.strftime("%d-%m-%Y") %>, </i>
-    <strong><%= commentaire.commentateur %></strong> a posté
-  </div>
-
-  <div class="comm">
-    " <%= commentaire.commentaire %> "
-  </div>
-<% end %>
-
-<hr class="titreHr">
-
-<h2>Ajouter un commentaire</h2>
-<%= render 'comments/form' %>

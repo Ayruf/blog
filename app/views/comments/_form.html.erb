@@ -1,16 +1,21 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <div class="commLabel">
-    <%= f.label :nom %>
-  </div>
-  <div>
+    <p class="titreLabel"><%= f.label :nom %></p>
     <%= f.text_field :commentateur %>
   </div>
   
-  <div class="commLabel" style="margin-top:10px">
-    <%= f.label :commentaire %>
+  <div class="commLabel">
+    <p class="titreLabel"><%= f.label :email %></p>
+    <%= f.text_field :email %>
   </div>
-  <div>
-    <%= f.text_area(:commentaire, rows: 7, cols:70) %>
+  
+  <div class="commLabel">
+    <p class="titreLabel"><%= f.label :website %></p>
+    <%= f.text_field :website %>
+  </div>  
+  
+  <div id="commBox">
+    <%= f.text_area(:commentaire, rows: 7, cols:90) %>
   </div>
 
   <div class="bouton">

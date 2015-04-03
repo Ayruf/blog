@@ -27,6 +27,17 @@ body {
 	font-style: normal;
 }
 
+@font-face {
+	font-family:"MatildeSketch";
+	src:url("matilde_sketch.eot?") format("eot"),
+		url("matilde_sketch.woff") format("woff"),
+		url("matilde_sketch.ttf") format("truetype"),
+		url("matilde_sketch.svg#MatildeSketch") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
 #bannière { 
 	text-align:center; 
 	background:white;
@@ -50,9 +61,34 @@ body {
 	height:100%;
 }
 
+#social {
+	text-align:center;
+}
+
+#followMe {
+	text-align:center;
+}
+
+#commBox {
+	position:center;
+	margin-top:1%;
+}
+
+#comment_commentaire {
+	border-radius:0px;
+}
+
+#comment_commentateur,
+#comment_email,
+#comment_website {
+	width:64%;
+	border-radius:0px;
+}
+
 .epicfont{
 	font-family:'EpicAwesomeness';
 	font-size:x-large;
+	text-align:center;
 }
 
 .container {
@@ -65,7 +101,8 @@ body {
 	display:inline-block;
 	float:left;
 	vertical-align:top;
-	width:15%;
+	font-family:'MatildeSketch';
+	width:20%;
 	height:15%;
 }
 
@@ -86,9 +123,20 @@ body {
 .link a:visited, 
 .link a:hover, 
 .link a:active,
-.link {
+.link 
+.commWebsite a:link, 
+.commWebsite a:visited, 
+.commWebsite a:hover, 
+.commWebsite a:active,
+.commWebsite {
 	color:black;
 	text-decoration:none;
+}
+
+.commWebsite{
+	text-align: left;
+	margin-left: 25%;
+	margin-top: 0.5%;
 }
 
 .titre{
@@ -113,15 +161,13 @@ body {
 	width:100%;
 }
 
-.commLabel {
-	position:center; 
-}
 
 .commPseudo{
 	text-align:left;
 	width:60%;
 	margin-left:20%;
 	margin-top:20px;
+	color: #A4A6A6;
 }
 
 .comm {
@@ -130,8 +176,27 @@ body {
 	text-align:left;
 	width:55%;
 	margin-left:5%;
-	margin-top:5px;
+	margin-top:0.5%;
 	border-radius:8px;
+}
+
+.new_comment {
+	padding-left:15%;
+}
+
+.titreComm {
+	padding-left:15%;
+	margin-top:5%;
+}
+
+.titreLabel {
+	text-align:left;
+	margin-left:17%;
+	margin-bottom:0%;
+}
+
+.commLabel {
+	display:inline-block;
 }
 
 .bouton {
