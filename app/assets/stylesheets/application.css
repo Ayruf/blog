@@ -81,7 +81,7 @@ body {
 #comment_commentateur,
 #comment_email,
 #comment_website {
-	width:64%;
+	width:71%;
 	border-radius:0px;
 }
 
@@ -191,7 +191,7 @@ body {
 
 .titreLabel {
 	text-align:left;
-	margin-left:17%;
+	margin-left:13%;
 	margin-bottom:0%;
 }
 
