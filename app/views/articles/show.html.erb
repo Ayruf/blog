@@ -5,39 +5,51 @@
 <hr class="titreHr">
 
 <div class="container">
-  <div class="colonneLike">
-	  <div style="position:relative">
+    <div class="colonneLike">
+	<div style="position:relative">
 	    <div style="position:absolute; margin-left:13%; margin-top:13%"><%= @article.created_at.strftime("%d") %></div>
 	    <div style="position:absolute; margin-left:42%; margin-top:13%"><%= @article.created_at.strftime("%m") %></div>
 	    <div style="position:absolute; margin-left:74%; margin-top:13%"><%= @article.created_at.strftime("%y") %></div>	  
 	    <div><%= image_tag("date.jpg", class: "fleur") %></div>
-	  </div>
-  </div>
+	</div>
+    </div>
 
-	<%= render 'article' %>
+    <%= render 'article' %>
 </div>
 
 <hr class="titreHr">
 
 <div>
-	<% @article.comments.reverse_each do |commentaire| %>
-	  <div class="commPseudo">
+    <% k = 0 %>
+    <% @article.comments.reverse_each do |commentaire| %>
+	<div id="com<%= k %>">
+	    <div class="commPseudo">
 		<i>Le <%= commentaire.created_at.strftime("%d-%m-%Y") %> à <%= commentaire.created_at.strftime("%H:%M") %>, </i>
 		<strong style="color:black"><%= commentaire.commentateur %></strong> a posté
-	  </div>
+	    </div>
 
-	  <div class="comm">
-		" <%= commentaire.commentaire %> "
-	  </div>
-	  
-	  <p class="commWebsite">
-		<% if commentaire.website %>
-		  <%= link_to commentaire.website, "http://#{commentaire.website}", target: "_blank"%>
-		<% end %>
-	  </p>
-	<% end %>
+	    <div class="comm">" <%= commentaire.commentaire %> "</div>
+	    
+	    <% if commentaire.website %>
+		<p class="commWebsite">
+		    <%= link_to commentaire.website, "http://#{commentaire.website}", target: "_blank"%>
+		</p>
+	    <% end %>
+	    <script>
+		var div = document.getElementById("com<%= k %>");
+		var button = document.createElement("button");
+		div.appendChild(button);
+		div.on("click", function(){
+		    var div = document.getElementById("com<%= k %>");
+		    var input = document.createElement("input");
+		    div.appendChild(input);
+		});
+	    </script>
+	</div>
+	<% k += 1 %>
+    <% end %>
 
-	<h2 class="titreComm">Commenter l'article</h2>
-	<%= render 'comments/form' %>
+    <h2 class="titreComm">Commenter l'article</h2>
+    <%= render 'comments/form' %>
 </div>
 
