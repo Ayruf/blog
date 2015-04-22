@@ -19,7 +19,7 @@
 			<% when 'Texte' && contenuRestant == 2 %>
 			  <%= content.texte %>        
 			<% else content.type == 'Image' %>
-			  <%= image_tag content.texte, class: "photo" %>  
+			  <%= link_to image_tag(content.texte, class: "photo"), article %>  
 		  <% end %>
 		  <script>
 			$('img').bind('contextmenu', function(e) {
