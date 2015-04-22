@@ -1,5 +1,11 @@
+<% k = 0 %>
 <% @article.contenus.each do |content| %>
-<div class="contenu">
+<div class="contenu" style=<% if k == 0 %>"margin-top:3%" <% end %>>
+<% if k == 0 %>
+<% k = 1 %>
+<% else %>
+<% k = 0 %>
+<% end %>
   <% if content.type == 'Texte' %>
     <%= content.texte %>
   <% else content.type == 'Image' %>
